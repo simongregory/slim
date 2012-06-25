@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+        <title>BBC Media Playout</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+        <script data-main="script/extras/main" src="http://static.bbci.co.uk/frameworks/requirejs/0.11.1/sharedmodules/require.js"></script>
+        <link rel="stylesheet" href="style/slim.css" type="text/css" media="screen"/>
+    </head>
+    <body>
+        <div id="header">
+            <div id="logo">
+                <a id="focusBeforeFlash" href="#!rewindToStart" alt="BBC iPlayer">
+                    <img src="images/bbc_iplayer_logo.png"/>
+                </a>
+            </div>
+        </div>
+
+        <div id="container">
+            <div id="player">imp</div>
+        </div>
+
+        <ul id="channel-selector">
+            <li><a href="#!load/live/bbc1" id="focusAfterFlash"><span class="logo bbc-one"></span></a></li>
+            <li><a href="#!load/live/bbc2"><span class="logo bbc-two"></span></a></li>
+            <li><a href="#!load/live/bbc3"><span class="logo bbc-three"></span></a></li>
+            <li><a href="#!load/live/bbc4"><span class="logo bbc-four"></span></a></li>
+            <li><a href="#!load/live/cbeebies"><span class="logo cbeebies"></span></a></li>
+            <li><a href="#!load/live/cbbc"><span class="logo cbbc"></span></a></li>
+            <li><a href="#!load/live/news_ch"><span class="logo bbc-news24"></span></a></li>
+            <li><a href="#!load/live/alba"><span class="logo bbc-alba"></span></a></li>
+            <li><a href="#!load/live/llnw"><span class="logo bbc-parliament"></span></a></li>
+			<li><a href="#!load/live/bbchd"><span class="logo bbc-hd"></span></a></li>
+			<li><a href="#!load/live/bbc1hd"><span class="logo bbc-one-hd"></span></a></li>
+        </ul>
+
+		<div id="container">
+			<a href="#!play">play</a>
+			<a href="#!pause">pause</a>
+			<a href="#!stop">stop</a>
+		<div>
+    </body>
+</html>

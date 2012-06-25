@@ -1,0 +1,105 @@
+* {
+  margin: 0px;
+}
+
+body {
+  background: #2c2c2c;
+  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+  font-weight:normal;
+}
+
+a {
+	color: silver;
+}
+
+a:hover {
+	color: #f54897;
+}
+
+a:active {
+	text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding-bottom: 50px;
+}
+
+li {
+  float: left;
+  padding: 2px;
+}
+
+li:hover {
+  border: 2px solid #fff;
+  padding: 0px;
+}
+
+#header {
+  height: 60px;
+  background-image:url('../images/bg.png');
+  background-repeat: repeat-x;
+  padding-left: 20px;
+  margin-top: 0px;
+}
+
+#logo {
+  width: 832px;
+  margin: auto;
+  padding-top: 18px;
+}
+
+#container {
+  padding: 10px;
+  color: #999;
+  margin: auto;
+  width: 832px;
+}
+
+#player {
+  width: 832px;
+  height: 468px;
+  display: block;
+  color: black;
+  background-color: black;
+}
+
+#channel-selector {
+  width: 800px;
+  border: none;
+  margin: auto;
+  margin-top: 4px;
+  margin-bottom: 0px;
+}
+
+.logo {
+  width: 66px;
+  height: 37px;
+  background: transparent url(../images/tv_channel_logos.png) no-repeat -912px 0;
+  display: block;
+}
+
+.bbc-one, .bbc-one-london { background-position: -304px 0; }
+.bbc-one-hd { background-position: -989px 0; }
+.bbc-two, .bbc-two-england { background-position: -532px 0; }
+.bbc-three { background-position: -456px 0; }
+.bbc-four { background-position: -76px 0; }
+.bbc-news, .bbc-news24 { background-position: -228px 0; }
+.bbc-hd { background-position: -152px 0; }
+.bbc-parliament { background-position: -380px 0; }
+.cbbc { background-position: -608px 0; }
+.cbeebies { background-position: -684px 0; }
+.bbc-alba { background-position: 0 0; }
+.bbc-cymru { background-position: -760px 0; }
+.bbc-sport { background-position: -836px 0; }
+
+.blq-hide {
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #333333;
+  width: 832px;
+  border: none;
+  font-size: 11px;
+  text-align: right;
+}
