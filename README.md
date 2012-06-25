@@ -1,6 +1,6 @@
-# BBC Slim
+# Slim
 
-A an experimental thin media player for BBC Media Playout
+A an experimental thin media player for BBC media playout nerds
 
 ## Installation
 
@@ -22,3 +22,12 @@ Good package management solutions are [rvm][rvm] and [Homebrew][brew].
 Want to know what else you can do?
 
     rake -T
+
+## License
+
+    Copyright MMXII British Broadcasting Corporation. All Rights Reserved.
+
+[brew]: http://mxcl.github.com/homebrew/ "Homebrew package manager"
+[git]: http://git-scm.org/
+[ruby]: http://ruby-lang.org/
+[rvm]: https://rvm.beginrescueend.com/ "Ruby Version Manager"
