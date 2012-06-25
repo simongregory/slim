@@ -1,0 +1,54 @@
+<flex-config>
+
+	<benchmark>false</benchmark>
+	<default-background-color>#000000</default-background-color>
+	<use-network>true</use-network>
+	<default-frame-rate>25</default-frame-rate>
+
+	<static-link-runtime-shared-libraries>true</static-link-runtime-shared-libraries>
+
+	<!--
+	http://help.adobe.com/en_US/flex/using/WS2db454920e96a9e51e63e3d11c0bf69084-7ee0.html
+	<target-player>10</target-player>
+	-->
+
+	<!--
+	<link-report>../report/imp-link-report.xml</link-report>
+	-->
+
+	<compiler>
+		<incremental>true</incremental>
+		<optimize>true</optimize>
+		<keep-generated-actionscript>false</keep-generated-actionscript>
+		<warn-no-constructor>false</warn-no-constructor>
+		<warn-no-explicit-super-call-in-constructor>false</warn-no-explicit-super-call-in-constructor>
+		<show-actionscript-warnings>true</show-actionscript-warnings>
+		<show-binding-warnings>true</show-binding-warnings>
+		<show-unused-type-selector-warnings>true</show-unused-type-selector-warnings>
+
+		<fonts>
+			<languages>
+				<language-range>
+					<lang>Basic Latin</lang>
+					<range>U+0020-U+002F,U+0030-U+0039,U+003A-U+0040,U+0041-U+005A,U+005B-U+0060,U+0061-U+007A,U+007B-U+007E,U+00A3,U+00A5,U+0024,U+20AC,U+00A9,U+2022</range>
+				</language-range>
+			</languages>
+		</fonts>
+	</compiler>
+
+	<metadata>
+		<title>BBC iPlayer Media Player</title>
+		<description>Making the unmissable unmissable</description>
+		<publisher>British Broadcasting Corporation</publisher>
+		<creator>BBC</creator>
+		<language>EN</language>
+	</metadata>
+
+	<!-- <frames>
+		<frame>
+			<label>two</label>
+			<classname>bbc.imp.PlayerContext</classname>
+		</frame>
+	</frames> -->
+
+</flex-config>
