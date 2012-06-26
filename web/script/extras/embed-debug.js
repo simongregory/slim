@@ -55,7 +55,7 @@ define('embed-debug', [
                     case 'play':
                         that._getEmbeddedPlayer().play();
                         break;
-                    case 'play':
+                    case 'stop':
                         that._getEmbeddedPlayer().stop();
                         break;
                     case 'load':
