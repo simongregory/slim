@@ -121,7 +121,10 @@ define('embed-debug', [
         },
 
         _playbackUpdate: function(currentTime, duration) {
-          log("Player current time: " + currentTime + " duration: " + duration);
+            var player = this._getEmbeddedPlayer()
+            var status = "Player current time: " + currentTime + " duration: " + duration + " paused:" + player.paused() + " volume: " + player.volume()
+
+            document.getElementById("status").innerHTML = status;
         },
 
         /**
