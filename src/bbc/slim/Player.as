@@ -19,6 +19,7 @@ import org.osmf.events.MediaErrorEvent;
 
 import bbc.js.Bridge;
 import bbc.js.IBridge;
+import org.osmf.events.TimeEvent;
 
 public class Player extends Sprite
 {
@@ -37,6 +38,7 @@ public class Player extends Sprite
     {
         controller = new MediaPlayer
         controller.addEventListener(MediaPlayerStateChangeEvent.MEDIA_PLAYER_STATE_CHANGE, onStateChange)
+        controller.addEventListener(TimeEvent.CURRENT_TIME_CHANGE, onCurrentTimeChange)
 
         view = new MediaContainer
         view.width = 832
@@ -59,7 +61,7 @@ public class Player extends Sprite
     public function startPageAPI():void
     {
         page = new Bridge
-        page.addCallback('loadPlaylist', onLoadMedia)
+        page.addCallback('loadMedia', onLoadMedia)
         page.addCallback('pause', controller.pause)
         page.addCallback('play', controller.play)
         page.addCallback('stop', controller.stop)
@@ -81,6 +83,11 @@ public class Player extends Sprite
 
         view.addMediaElement(model)
     }
+
+	private function onCurrentTimeChange(event:TimeEvent):void
+	{
+        page.call('embed._playbackUpdate', controller.currentTime, controller.duration)
+	}
 
     private function onStateChange(event:MediaPlayerStateChangeEvent):void
     {

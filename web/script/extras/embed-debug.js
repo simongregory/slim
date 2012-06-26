@@ -23,7 +23,9 @@ define('embed-debug', [
          * @param  {Object} options - An object, containing options for SWFObject
          */
         init: function (options) {
-            this.setPlaylistUrl('http://www.bbc.co.uk/mediaselector/playlists/hds/pc/ak/bbc1.f4m');
+
+            //Live BBC1 HDS stream
+            this.setMediaUrl('http://www.bbc.co.uk/mediaselector/playlists/hds/pc/ak/bbc1.f4m');
             this.setServiceId('bbc_one_london');
             this._embed({
                 src: this._options.src + '?' + new Date().getTime()
@@ -59,7 +61,7 @@ define('embed-debug', [
                         that._getEmbeddedPlayer().stop();
                         break;
                     case 'load':
-                        that._loadPlaylist(urlDetails)
+                        that._loadMedia(urlDetails)
                         break;
                     case 'rewindToStart':
                         that.rewindToStart();
@@ -75,7 +77,7 @@ define('embed-debug', [
         /**
          * Deduce the base path from the link, we expect this link to be in a conventional format.
          */
-        _loadPlaylist: function(link) {
+        _loadMedia: function(link) {
 
           var service = link.pop(),
               env = link.shift(),
@@ -92,7 +94,7 @@ define('embed-debug', [
           path += '/' + service + '.f4m'
 
           if (this._isEmbedded) {
-              this._getEmbeddedPlayer().loadPlaylist(path, service);
+              this._getEmbeddedPlayer().loadMedia(path, service);
           }
         },
 
@@ -116,6 +118,10 @@ define('embed-debug', [
                     event.preventDefault ? event.preventDefault() : event.returnValue = false;
                 }
             });
+        },
+
+        _playbackUpdate: function(currentTime, duration) {
+          log("Player current time: " + currentTime + " duration: " + duration);
         },
 
         /**

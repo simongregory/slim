@@ -92,7 +92,7 @@ define([
          * Set the playlist url.
          * @param {String} url
          */
-        setPlaylistUrl: function (url) {
+        setMediaUrl: function (url) {
             this._playlistUrl = url;
         },
 
@@ -378,7 +378,7 @@ define([
                     'playlistUrl': this._playlistUrl,
                     'serviceId': this._serviceId
                 });
-                this._getEmbeddedPlayer().loadPlaylist(this._playlistUrl, this._serviceId);
+                this._getEmbeddedPlayer().loadMedia(this._playlistUrl, this._serviceId);
             }
         }
     };
