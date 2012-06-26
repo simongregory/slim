@@ -77,6 +77,7 @@ public class Player extends Sprite
         model = makeMediaElement(playlist)
         model.addEventListener(MediaErrorEvent.MEDIA_ERROR, onMediaError)
 
+        //We would like to destroy and re
         controller.media = model
 
         view.addMediaElement(model)

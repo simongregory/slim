@@ -12,6 +12,7 @@ end
 
 # Compile the debug swf
 mxmlc "bin/debug/swf/slim.swf" do |t|
+  t.library_path << "lib/swc"
   t.input = "src/Slim.as"
   t.debug = true
 end
@@ -27,7 +28,7 @@ end
 # Compile the test swf
 mxmlc "bin/test/slim-test.swf" do |t|
   t.input = "test/SlimRunner.as"
-  t.library_path << "lib/test-swc"
+  t.library_path << "lib/test-swc" << 'lib/swc'
   t.source_path << 'test' << 'src'
   t.default_size = "100,100"
   t.debug = true
