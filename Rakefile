@@ -37,6 +37,14 @@ end
 desc "Compile and run the test swf"
 flashplayer :test => "bin/test/slim-test.swf"
 
+# Compile the test swf
+mxmlc "bin/release/slim.swf" do |t|
+  t.input = "src/Slim.as"
+  t.library_path << 'lib/swc'
+  t.source_path << 'src'
+  t.debug = false
+end
+
 ##############################
 # DEFAULT
 task :default => :run
