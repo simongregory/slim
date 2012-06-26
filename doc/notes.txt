@@ -1,0 +1,24 @@
+### Test Media
+
+PROGRESSIVE FLV     http://mediapm.edgesuite.net/strobe/content/test/AFaerysTale_sylviaApostol_640_500_short.flv
+PROGRESSIVE FLV 2	http://mediapm.edgesuite.net/osmf/content/test/akamai_10_year_f8_512K.flv
+PROGRESSIVE FLV SSL	https://a248.e.akamai.net/7/248/67129/v0001/mediapm.download.akamai.com/67129/osmf/content/test/akamai_10_year_f8_512K.flv
+STREAMING FLV		rtmp://cp67126.edgefcs.net/ondemand/mediapm/osmf/content/test/akamai_10_year_f8_512K
+
+PROGRESSIVE MP4		http://mediapm.edgesuite.net/osmf/content/test/spacealonehd_sounas_640_700.mp4
+PROGRESSIVE MP4 SSL	https://a248.e.akamai.net/7/248/67129/v0001/mediapm.download.akamai.com/67129/osmf/content/test/spacealonehd_sounas_640_700.mp4
+STREAMING MP4		rtmp://cp67126.edgefcs.net/ondemand/mp4:mediapm/osmf/content/test/spacealonehd_sounas_640_700.mp4
+
+PROGRESSIVE F4V		http://mediapm.edgesuite.net/osmf/content/test/sample1_700kbps.f4v
+PROGRESSIVE F4V SSL	https://a248.e.akamai.net/7/248/67129/v0001/mediapm.download.akamai.com/67129/osmf/content/test/sample1_700kbps.f4v
+STREAMING F4V		rtmp://cp67126.edgefcs.net/ondemand/mp4:mediapm/osmf/content/test/sample1_700kbps.f4v
+
+REMOTE STREAM WITH AUTH	rtmp://cp78634.edgefcs.net/ondemand/mp4:mediapmsec/osmf/content/test/SpaceAloneHD_sounas_640_700.mp4?auth=daEc2a9a5byaMa.avcxbiaoa8dBcibqbAa8-bkxDGK-b4toa-znnrqzzBvl&aifp=v0001
+REMOTE LIVE             rtmp://cp34973.live.edgefcs.net/live/Flash_Live_Benchmark@632
+REMOTE STREAM           rtmp://cp67126.edgefcs.net/ondemand/mediapm/strobe/content/test/SpaceAloneHD_sounas_640_500_short
+
+PROGRESSIVE MOV      http://mediapm.edgesuite.net/osmf/content/test/akamai_10_year_500.mov
+PROGRESSIVE MOV SSL  https://a248.e.akamai.net/7/248/67129/v0001/mediapm.download.akamai.com/67129/osmf/content/test/akamai_10_year_500.mov
+STREAMING MOV        rtmp://cp67126.edgefcs.net/ondemand/mp4:mediapm/osmf/content/test/akamai_10_year_500.mov
+
+STREAMING AUDIO  rtmp://cp67126.edgefcs.net/ondemand/mp3:mediapm/osmf/content/test/train_1500
