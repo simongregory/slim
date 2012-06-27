@@ -30,6 +30,8 @@ define('embed-debug', [
             this._embed({
                 src: this._options.src + '?' + new Date().getTime()
             });
+            document.getElementById('player').addEventListener("foobar", function(){ log("WE DID FOO BAR")});
+            //document.getElementById('player').dispatchEvent(type)
             this._attachClickHandling();
             this._attachKeyHandling();
         },
@@ -72,6 +74,11 @@ define('embed-debug', [
                     return false;
                 }
             });
+        },
+
+        _dispatch: function(type) {
+          log("trying to dispatch " + type)
+          document.getElementById('player').dispatchEvent(type)
         },
 
         /**
