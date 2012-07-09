@@ -7,6 +7,7 @@
 package bbc.slim
 {
 import flash.display.Sprite;
+import flash.display.DisplayObject;
 
 import org.osmf.containers.IMediaContainer;
 import org.osmf.containers.MediaContainer;
@@ -20,7 +21,6 @@ import org.osmf.media.URLResource;
 
 import bbc.js.Bridge;
 import bbc.js.IBridge;
-import flash.display.DisplayObject;
 
 public class Player extends Sprite
 {
@@ -42,10 +42,11 @@ public class Player extends Sprite
         controller.addEventListener(TimeEvent.CURRENT_TIME_CHANGE, onCurrentTimeChange)
 
         view = new MediaContainer
-        //view.width = 832
-        //view.height = 468
 
-		addChild(view as DisplayObject)
+        Sprite(view).width = 832
+        Sprite(view).height = 468
+
+        addChild(view as DisplayObject)
 
         startPageAPI()
     }
@@ -122,18 +123,18 @@ public class Player extends Sprite
 
     private function makeMediaElement(url:String):MediaElement
     {
-		var resource:URLResource = new URLResource(url)
+        var resource:URLResource = new URLResource(url)
         var factory:DefaultMediaFactory = new DefaultMediaFactory
         var element:MediaElement = factory.createMediaElement(resource)
 
         return element
     }
 
-	private function onCurrentTimeChange(event:TimeEvent):void
-	{
+    private function onCurrentTimeChange(event:TimeEvent):void
+    {
         page.call('embed._playbackUpdate', controller.currentTime, controller.duration)
         page.call('embed._dispatch', 'foobar')
-	}
+    }
 
     private function onStateChange(event:MediaPlayerStateChangeEvent):void
     {
