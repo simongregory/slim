@@ -29,7 +29,7 @@ Destroying and re-creating instances of MediaPlayer is problematic. There's an o
 
 ## License
 
-    Copyright MMXII British Broadcasting Corporation. All Rights Reserved.
+    Copyright original author or authors. All Rights Reserved.
 
 [brew]: http://mxcl.github.com/homebrew/ "Homebrew package manager"
 [git]: http://git-scm.org/

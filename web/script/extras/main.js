@@ -1,5 +1,5 @@
 /**
- * Copyright MMXII British Broadcasting Corporation. All Rights Reserved.
+ * Copyright MMXII original author or authors. All Rights Reserved.
  * @author Simon Gregory [simon.gregory@bbc.co.uk]
  */
 require({
